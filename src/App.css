@@ -1,18 +1,10 @@
 .App-header {
   min-height: 100vh;
-  min-width: 100vw; /* 수정된 부분 */
+  min-width: 100vw;
   height: auto;
   justify-content: center;
 }
-/* App.css */
+
 .navbar {
-  background-color: lightblue;
-}
-
-.navbar-brand {
-  color: white;
-}
-
-.nav-link.active {
-  font-weight: bold;
+  width: 100vw;
 }
