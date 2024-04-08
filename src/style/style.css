@@ -1,0 +1,67 @@
+.navbar-toggler:focus {
+  outline: none;
+}
+.navbar-toggler .line {
+  display: block;
+  width: 20px; /* 원하는 가로 선의 길이로 조정 */
+  height: 3px; /* 원하는 가로 선의 두께로 조정 */
+  border-radius: 10px;
+  background-color: black; /* 가로 선의 색상을 검정색으로 설정 */
+  margin-bottom: 3px; /* 가로 선 사이의 간격을 조정 */
+  outline: none;
+}
+/* 스타일 파일에서 미디어 쿼리 추가 */
+@media (max-width: 500px) {
+  .navbar-toggler {
+    display: block; /* 햄버거 아이콘을 블록 레벨 요소로 표시 */
+  }
+  .navbar-collapse {
+    display: none; /* 초기에는 네비게이션 메뉴를 숨김 */
+  }
+  .navbar-collapse.show {
+    display: block; /* 햄버거 아이콘을 클릭하면 네비게이션 메뉴 표시 */
+  }
+}
+.nav-link {
+  color: black;
+  margin: 10px;
+  margin-left: 50px;
+}
+/* style.css */
+.footer-container {
+  bottom: 0;
+  width: 100%;
+  background-color: lightgray;
+  padding: 20px;
+  text-align: left;
+}
+
+/* 기본 폰트 크기 설정 */
+.footer-text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: black;
+}
+
+@keyframes slide {
+  from {
+    top: 100px; /* 시작 지점을 조정 */
+    opacity: 0; /* 투명도를 0으로 설정하여 처음에는 보이지 않도록 합니다. */
+  }
+  to {
+    top: 220px;
+    opacity: 1; /* 끝나는 지점에서도 투명도를 1로 유지하여 텍스트가 완전히 나타나도록 합니다. */
+  }
+}
+
+@keyframes slideTwo {
+  from {
+    top: 250px;
+    opacity: 0;
+  }
+
+  to {
+    top: 280px;
+    opacity: 1;
+  }
+}

@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const NavBar: React.FC = () => {
+  const [collapsed, setCollapsed] = useState(true);
+
+  const handleToggle = () => {
+    setCollapsed(!collapsed);
+  };
+
   return (
     <nav
       className="navbar navbar-expand-lg bg-body-tertiary"
@@ -12,56 +18,39 @@ const NavBar: React.FC = () => {
           <img
             src="/logo192.png"
             alt="로고"
-            style={{ width: "50px", height: "50px", marginRight: "100px" }}
+            style={{ width: "50px", height: "50px" }}
           />
         </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
+        <button className="navbar-toggler" type="button" onClick={handleToggle}>
+          <span className="navbar-toggler-icon">
+            <span className="line"></span>
+            <span className="line"></span>
+            <span className="line"></span>
+          </span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div
+          className={`collapse navbar-collapse ${collapsed ? "" : "show"}`}
+          id="navbarNav"
+        >
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <a
-                className="nav-link"
-                href="#"
-                style={{ width: "100px", color: "black" }}
-              >
+              <a className="nav-link" href="#">
                 소개
               </a>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link"
-                href="#"
-                style={{ width: "100px", color: "black" }}
-              >
-                거래
+              <a className="nav-link" href="#">
+                소셜링
               </a>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link"
-                href="#"
-                style={{ width: "100px", color: "black" }}
-              >
-                소모임
+              <a className="nav-link" href="#">
+                마켓플레이스
               </a>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link"
-                href="#"
-                style={{ width: "100px", color: "black" }}
-              >
-                의지해요♥
+              <a className="nav-link" href="#">
+                투게더
               </a>
             </li>
           </ul>
