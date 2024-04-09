@@ -29,18 +29,20 @@
 }
 /* style.css */
 .footer-container {
-  bottom: 0;
   width: 100%;
-  background-color: lightgray;
-  padding: 20px;
+  background-color: #84ab49;
+  height: 130px;
   text-align: left;
 }
 
-/* 기본 폰트 크기 설정 */
 .footer-text {
   font-size: 14px;
-  line-height: 1.5;
-  color: black;
+  line-height: 2;
+  color: white;
+  margin-top: 10px; /* 원하는 만큼 아래로 내리는 값 설정 */
+  display: inline-block;
+  margin-left: 10px;
+  padding: 10px;
 }
 
 @keyframes slide {
@@ -49,7 +51,7 @@
     opacity: 0; /* 투명도를 0으로 설정하여 처음에는 보이지 않도록 합니다. */
   }
   to {
-    top: 220px;
+    top: 240px;
     opacity: 1; /* 끝나는 지점에서도 투명도를 1로 유지하여 텍스트가 완전히 나타나도록 합니다. */
   }
 }
@@ -61,7 +63,40 @@
   }
 
   to {
-    top: 280px;
+    top: 300px;
     opacity: 1;
   }
+}
+.slideDown {
+  animation: slideDownAnimation 1s forwards;
+}
+
+@keyframes slideDownAnimation {
+  from {
+    top: -50px; /* 시작 지점 설정 */
+  }
+  to {
+    top: 100px; /* 끝나는 지점 설정 */
+  }
+}
+.expand-text {
+  opacity: 0; /* 초기에 텍스트를 투명하게 설정하여 보이지 않도록 합니다. */
+}
+
+.socialing-visible.expand-text {
+  opacity: 1; /* 요소가 socialing-visible 클래스와 함께 나타날 때 투명도를 1로 설정하여 페이드 인 효과를 줍니다. */
+}
+
+.card-title {
+  font-weight: bold;
+}
+.navbar-nav .nav-link {
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  border-color: #84ab49;
+  font-weight: bold;
 }

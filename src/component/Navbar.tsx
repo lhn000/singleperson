@@ -34,22 +34,115 @@ const NavBar: React.FC = () => {
         >
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a
+                className="nav-link"
+                href="#"
+                style={{
+                  textDecoration: "none",
+                  borderBottom: "3px solid transparent",
+                  transition: "border-color 0.3s",
+                  color: "#84AB49",
+                  fontWeight: "bold",
+                }}
+                onMouseEnter={(e) => {
+                  const target = e.target as HTMLElement;
+                  target.style.borderColor = "#84AB49";
+                }}
+                onMouseLeave={(e) => {
+                  const target = e.target as HTMLElement;
+                  target.style.borderColor = "transparent";
+                  target.style.color = "#84AB49";
+                }}
+                onMouseOver={(e) => {
+                  const target = e.target as HTMLElement;
+                  target.style.borderColor = "#84AB49";
+                  target.style.color = "#84AB49"; // 텍스트 색상 변경
+                }}
+              >
                 소개
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a
+                className="nav-link"
+                href="#"
+                style={{
+                  textDecoration: "none",
+                  borderBottom: "3px solid transparent",
+                  transition: "border-color 0.3s",
+                  color: "#84AB49",
+                  fontWeight: "bold",
+                }}
+                onMouseEnter={(e) =>
+                  ((e.target as HTMLElement).style.borderColor = "#84AB49")
+                }
+                onMouseLeave={(e) => {
+                  const target = e.target as HTMLElement;
+                  target.style.borderColor = "transparent";
+                  target.style.color = "84AB49";
+                }}
+                onMouseOver={(e) => {
+                  const target = e.target as HTMLElement;
+                  target.style.borderColor = "#84AB49";
+                  target.style.color = "#84AB49"; // 텍스트 색상 변경
+                }}
+              >
                 소셜링
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a
+                className="nav-link"
+                href="#"
+                style={{
+                  textDecoration: "none",
+                  borderBottom: "3px solid transparent",
+                  transition: "border-color 0.3s",
+                  color: "#84AB49",
+                  fontWeight: "bold",
+                }}
+                onMouseEnter={(e) =>
+                  ((e.target as HTMLElement).style.borderColor = "#84AB49")
+                }
+                onMouseLeave={(e) => {
+                  const target = e.target as HTMLElement;
+                  target.style.borderColor = "transparent";
+                  target.style.color = "84AB49";
+                }}
+                onMouseOver={(e) => {
+                  const target = e.target as HTMLElement;
+                  target.style.borderColor = "#84AB49";
+                  target.style.color = "#84AB49"; // 텍스트 색상 변경
+                }}
+              >
                 마켓플레이스
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a
+                className="nav-link"
+                href="#"
+                style={{
+                  textDecoration: "none",
+                  borderBottom: "3px solid transparent",
+                  transition: "border-color 0.3s",
+                  color: "#84AB49",
+                  fontWeight: "bold",
+                }}
+                onMouseEnter={(e) =>
+                  ((e.target as HTMLElement).style.borderColor = "#84AB49")
+                }
+                onMouseLeave={(e) => {
+                  const target = e.target as HTMLElement;
+                  target.style.borderColor = "transparent";
+                  target.style.color = "84AB49";
+                }}
+                onMouseOver={(e) => {
+                  const target = e.target as HTMLElement;
+                  target.style.borderColor = "#84AB49";
+                  target.style.color = "#84AB49"; // 텍스트 색상 변경
+                }}
+              >
                 투게더
               </a>
             </li>
@@ -59,7 +152,26 @@ const NavBar: React.FC = () => {
               <a
                 className="nav-link"
                 href="#"
-                style={{ marginRight: "50px", color: "black" }}
+                style={{
+                  textDecoration: "none",
+                  borderBottom: "3px solid transparent",
+                  transition: "border-color 0.3s",
+                  color: "#84AB49",
+                  fontWeight: "bold",
+                }}
+                onMouseEnter={(e) =>
+                  ((e.target as HTMLElement).style.borderColor = "#84AB49")
+                }
+                onMouseLeave={(e) => {
+                  const target = e.target as HTMLElement;
+                  target.style.borderColor = "transparent";
+                  target.style.color = "#84AB49";
+                }}
+                onMouseOver={(e) => {
+                  const target = e.target as HTMLElement;
+                  target.style.borderColor = "#84AB49";
+                  target.style.color = "#84AB49"; // 텍스트 색상 변경
+                }}
               >
                 마이페이지
               </a>
@@ -68,7 +180,27 @@ const NavBar: React.FC = () => {
               <Link
                 className="nav-link"
                 to="/login"
-                style={{ marginRight: "50px", color: "black" }}
+                style={{
+                  marginRight: "50px",
+                  textDecoration: "none",
+                  borderBottom: "3px solid transparent",
+                  transition: "border-color 0.3s",
+                  color: "#84AB49",
+                  fontWeight: "bold",
+                }}
+                onMouseEnter={(e) =>
+                  ((e.target as HTMLElement).style.borderColor = "#84AB49")
+                }
+                onMouseLeave={(e) => {
+                  const target = e.target as HTMLElement;
+                  target.style.borderColor = "transparent";
+                  target.style.color = "#84AB49";
+                }}
+                onMouseOver={(e) => {
+                  const target = e.target as HTMLElement;
+                  target.style.borderColor = "#84AB49";
+                  target.style.color = "#84AB49"; // 텍스트 색상 변경
+                }}
               >
                 로그인
               </Link>
